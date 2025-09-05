@@ -1,0 +1,174 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+  padding: 80px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1, h2, h3 {
+  color: #ff4da6;
+}
+
+p {
+  color: #ccc;
+}
+
+button, .btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  background: #ff4da6;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+  background: #e60073;
+  transform: translateY(-3px);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 5%;
+  }
+}
+
+
+/* tambahan untuk grid */
+.projects-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background: #222;
+}
+
+/* buat tampilan di fotoku biar cantik */
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-img img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ff4da6;
+  box-shadow: 0 0 30px rgba(255, 77, 166, 0.5);
+  
+  /* animasi floating */
+  animation: float 4s ease-in-out infinite;
+}
+
+/* efek melayang */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* buat geser2 foto*/
+.photo-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 20px 0;
+}
+
+.photo-slider img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  box-shadow: 0 0 15px rgba(255, 77, 166, 0.5);
+  transition: transform 0.3s;
+}
+
+.photo-slider img:hover {
+  transform: scale(1.05);
+}
+
+
+.skill {
+font-size: medium;
+font-family: Poppins;
+  font-weight: bold;       /* tebal */
+  position: center;
+  letter-spacing: 1px;      /* jarak antar huruf */
+  animation: fadeIn 1.5s ease-in-out
+ 
+}
+
+.project-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.project-link p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* warna hijau */
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.btn-link:hover {
+  background-color: #45a049; /* lebih gelap pas hover */
+}
