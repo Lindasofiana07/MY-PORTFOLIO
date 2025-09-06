@@ -10,12 +10,14 @@ export default function Hero() {
           <p>
             Welcome to my portfolio! Scroll down to see my journey and works.
           </p>
-          <a href="#projects" className="btn">See My Projects</a>
+          <a href="#projects" className="btn">
+            See My Projects
+          </a>
         </div>
 
         {/* Foto di sebelah kanan */}
         <div className="hero-img">
-          <img src="/image/me.jpg" alt="Pearl" />
+          <img src="image/me.jpg" alt="Pearl" />
         </div>
       </div>
     </section>

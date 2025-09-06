@@ -13,13 +13,13 @@ export default function Projects() {
           <h3>My Painting</h3>
           <p>My artworks </p>
           <div className="photo-slider">
-          <img src="/image/skill1.jpg" alt="Pearl" />
-          <img src="/image/skill2.jpg" alt="Pearl" />
-          <img src="/image/skill3.jpg" alt="Pearl" />
-          <img src="/image/skill4.jpg" alt="Pearl" />
-          <img src="/image/skill5.jpg" alt="Pearl" />
-          <img src="/image/skill6.jpg" alt="Pearl" />
-          <img src="/image/skill7.jpg" alt="Pearl" />
+          <img src="image/skill1.jpg" alt="Pearl" />
+          <img src="image/skill2.jpg" alt="Pearl" />
+          <img src="image/skill3.jpg" alt="Pearl" />
+          <img src="image/skill4.jpg" alt="Pearl" />
+          <img src="image/skill5.jpg" alt="Pearl" />
+          <img src="image/skill6.jpg" alt="Pearl" />
+          <img src="image/skill7.jpg" alt="Pearl" />
         </div>
         </div>
       </div>
